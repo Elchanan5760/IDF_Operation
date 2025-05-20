@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDF_Operation", "IDF_Operation.csproj", "{903B120D-1E45-47BF-AA58-DF3EAC712662}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903B120D-1E45-47BF-AA58-DF3EAC712662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903B120D-1E45-47BF-AA58-DF3EAC712662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903B120D-1E45-47BF-AA58-DF3EAC712662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903B120D-1E45-47BF-AA58-DF3EAC712662}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85503BA6-BD80-4AAF-A825-74CF952FA000}
+	EndGlobalSection
+EndGlobal
