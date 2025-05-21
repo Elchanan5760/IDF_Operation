@@ -9,7 +9,7 @@ using IDF_Operation.Artil;
 using IDF_Operation.Dro;
 
 
-namespace IDF_Operation
+namespace IDF_Operation.idf
 {
     public class Idf
     {
