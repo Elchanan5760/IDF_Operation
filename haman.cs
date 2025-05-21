@@ -18,6 +18,9 @@ namespace IDF_Operation
             TimeInformation = tiimeInformation;
         }
 
-        public Masseg
+        public void Message()
+        {
+            Console.WriteLine($"nameTrrorist:{NameTroorist}\nlastlocatuon:{LastLocatuon}\ntimeInformation:{TimeInformation}");
+        }
     }
 }
