@@ -1,4 +1,8 @@
-﻿using IDF_Operation;
+
+﻿
+using IDF_Operation;
+using IDF_Operation.trroristt;
+
 
 namespace Idf
 {
@@ -6,7 +10,12 @@ namespace Idf
     {
         static void Main(string[] args)
         {
+        
 
         }
+
+        
+
+
     }
 }
