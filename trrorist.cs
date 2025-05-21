@@ -20,6 +20,7 @@ namespace IDF_Operation.trroristt
             Status = status;
             Arms = arms;
         }
+     
 
     }
 
