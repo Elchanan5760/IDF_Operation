@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation
 {
-    public class Haman
+    public class Aman
     {
         public string NameTroorist;
         public string LastLocatuon;
