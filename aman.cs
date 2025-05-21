@@ -11,7 +11,7 @@ namespace IDF_Operation
         public string NameTroorist;
         public string LastLocatuon;
         public string TimeInformation;
-        public Haman(string nameTrrorist, string lastLocatuon, string tiimeInformation)
+        public Aman(string nameTrrorist, string lastLocatuon, string tiimeInformation)
         {
             NameTroorist = nameTrrorist;
             LastLocatuon = lastLocatuon;
