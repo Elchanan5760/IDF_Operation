@@ -8,12 +8,12 @@ namespace IDF_Operation.models
 {
     public class Aman
     {
-        public trrorist NameTroorist;
+        public string NameTroorist;
         public string LastLocatuon;
         public string TimeInformation;
-        public Aman(trrorist nameTrrorist,string lastLocatuon, string tiimeInformation)
+        public Aman(string nameTroorist, string lastLocatuon, string tiimeInformation)
         {
-            NameTroorist = nameTrrorist;
+            NameTroorist = nameTroorist;
             LastLocatuon = lastLocatuon;
             TimeInformation = tiimeInformation;
         }
