@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDF_Operation.Strike
+namespace IDF_Operation.models
 {
     public interface IStrikePuttern
     {

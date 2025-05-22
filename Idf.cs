@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IDF_Operation.Strike;
-using IDF_Operation.Air;
-using IDF_Operation.Artil;
-using IDF_Operation.Dro;
+using IDF_Operation.models;
 
 
+<<<<<<< HEAD
 namespace IDF_Operation.idf
+=======
+
+
+namespace IDF_Operation.models
+
+>>>>>>> origin/main
 {
     public class Idf
     {
@@ -17,7 +21,11 @@ namespace IDF_Operation.idf
         public Aircraft aircraft;
         public Drones drones;
         public Artillery artillery;
+<<<<<<< HEAD
         Idf(string currentcommender,IStrikePuttern drones,IStrikePuttern aircraft,IStrikePuttern artillery)
+=======
+        public Idf(string currentcommender)//,StrikePuttern drones,StrikePuttern aircraft,StrikePuttern artillery
+>>>>>>> origin/main
         {
             CurrentCommender = currentcommender;
             aircraft = new Aircraft();

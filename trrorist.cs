@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDF_Operation.trroristt
+namespace IDF_Operation.models
 {
     internal class trrorist
     {
