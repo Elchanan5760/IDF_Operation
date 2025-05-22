@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation.models
 {
-    internal class trrorist
+    public class trrorist
     {
         public string Name;
         public int Rank;
