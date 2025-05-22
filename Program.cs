@@ -1,19 +1,16 @@
-﻿
-using IDF_Operation;
-using IDF_Operation.trroristt;
 
-namespace Idf
+
+using IDF_Operation.models;
+
+
+
+namespace IDF
 {
     public class Program()
     {
         static void Main(string[] args)
         {
-        
-
+            
         }
-
-        
-
-
     }
 }

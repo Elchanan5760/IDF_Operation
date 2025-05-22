@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDF_Operation
+namespace IDF_Operation.models
 {
     public class Aman
     {
-        public string NameTroorist;
+        public trrorist NameTroorist;
         public string LastLocatuon;
         public string TimeInformation;
-        public Aman(string nameTrrorist, string lastLocatuon, string tiimeInformation)
+        public Aman(trrorist nameTrrorist,string lastLocatuon, string tiimeInformation)
         {
             NameTroorist = nameTrrorist;
             LastLocatuon = lastLocatuon;
@@ -23,4 +23,8 @@ namespace IDF_Operation
             Console.WriteLine($"nameTrrorist:{NameTroorist}\nlastlocatuon:{LastLocatuon}\ntimeInformation:{TimeInformation}");
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

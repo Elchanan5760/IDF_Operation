@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDF_Operation
+namespace IDF_Operation.models
+
 {
     internal class hamas
     {
