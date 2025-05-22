@@ -7,8 +7,10 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    public class Drones:StrikePuttern
+    public class Drones:IStrikePuttern
     {
+        public int ammunitionCapcity = 3;
+        public double literOfSupply = 100;
         public string UniqueName()
         {
             return "Hermes 460 Drone";
@@ -16,12 +18,12 @@ namespace IDF_Operation.models
 
         public int AmmunitionCapcity()
         {
-            return 3;
+            return ammunitionCapcity;
         }
 
         public double LiterOfFuelSupply()
         {
-            return 100.0;
+            return literOfSupply;
         }
 
         public string Against()

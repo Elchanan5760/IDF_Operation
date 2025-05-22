@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IDF_Operation.models
 {
-    public interface StrikePuttern
+    public interface IStrikePuttern
     {
         
  

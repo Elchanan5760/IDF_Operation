@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 using IDF_Operation.models;
 
 
+<<<<<<< HEAD
+namespace IDF_Operation.idf
+=======
 
 
 namespace IDF_Operation.models
 
+>>>>>>> origin/main
 {
     public class Idf
     {
@@ -17,7 +21,11 @@ namespace IDF_Operation.models
         public Aircraft aircraft;
         public Drones drones;
         public Artillery artillery;
+<<<<<<< HEAD
+        Idf(string currentcommender,IStrikePuttern drones,IStrikePuttern aircraft,IStrikePuttern artillery)
+=======
         public Idf(string currentcommender)//,StrikePuttern drones,StrikePuttern aircraft,StrikePuttern artillery
+>>>>>>> origin/main
         {
             CurrentCommender = currentcommender;
             aircraft = new Aircraft();
@@ -31,12 +39,12 @@ namespace IDF_Operation.models
         
         public void Commender()
         {
-            Console.WriteLine($"the commender of IDF is {CurrentCommender}");
+            Console.WriteLine($"The commender of IDF is {CurrentCommender}");
         }
 
         public void Strikes()
         {
-            Console.WriteLine(aircraft.UniqueName());
+            
         }
     }
 }
