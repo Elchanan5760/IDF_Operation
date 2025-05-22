@@ -9,7 +9,7 @@ using IDF_Operation.Artil;
 using IDF_Operation.Dro;
 
 
-namespace IDF_Operation
+namespace IDF_Operation.idf
 {
     public class Idf
     {
@@ -17,7 +17,7 @@ namespace IDF_Operation
         public Aircraft aircraft;
         public Drones drones;
         public Artillery artillery;
-        Idf(string currentcommender,StrikePuttern drones,StrikePuttern aircraft,StrikePuttern artillery)
+        Idf(string currentcommender,IStrikePuttern drones,IStrikePuttern aircraft,IStrikePuttern artillery)
         {
             CurrentCommender = currentcommender;
             aircraft = new Aircraft();
@@ -31,12 +31,12 @@ namespace IDF_Operation
         
         public void Commender()
         {
-            Console.WriteLine($"the commender of IDF is {CurrentCommender}");
+            Console.WriteLine($"The commender of IDF is {CurrentCommender}");
         }
 
         public void Strikes()
         {
-            Console.WriteLine(aircraft.UniqueName());
+            
         }
     }
 }

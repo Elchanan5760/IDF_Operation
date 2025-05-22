@@ -7,8 +7,10 @@ using IDF_Operation.Strike;
 
 namespace IDF_Operation.Artil
 {
-    public class Artillery:StrikePuttern
+    public class Artillery:IStrikePuttern
     {
+        public int ammunitionCapcity = 40;
+        public double literOfSupply = 100;
         public string UniqueName()
         {
             return "Hermes 460 Drone";
@@ -16,12 +18,12 @@ namespace IDF_Operation.Artil
 
         public int AmmunitionCapcity()
         {
-            return 3;
+            return ammunitionCapcity;
         }
 
         public double LiterOfFuelSupply()
         {
-            return 100.0;
+            return literOfSupply;
         }
 
         public string Against()

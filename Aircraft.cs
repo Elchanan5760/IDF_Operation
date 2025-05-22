@@ -7,8 +7,10 @@ using IDF_Operation.Strike;
 
 namespace IDF_Operation.Air
 {
-    public class Aircraft:StrikePuttern
+    public class Aircraft:IStrikePuttern
     {
+        public int ammunitionCapcity = 8;
+        public double literOfSupply = 10000;
         public string UniqueName()
         {
             return "F16 Fighter Jet";
@@ -16,12 +18,12 @@ namespace IDF_Operation.Air
 
         public int AmmunitionCapcity()
         {
-            return 8;
+            return ammunitionCapcity;
         }
 
         public double LiterOfFuelSupply()
         {
-            return 10000.0;
+            return literOfSupply;
         }
 
         public string Against()
