@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IDF_Operation.idf;
+using IDF_Operation.models;
 
 namespace IDF_Operation
 {
@@ -25,9 +27,11 @@ namespace IDF_Operation
             switch (option)
             {
                 case "1":
-
+                    IntelligenceAnalysis intelligence = new IntelligenceAnalysis();
+                    intelligence
                     break;
                 case "2":
+                    Idf attackes = new;
                     break;
                 case "3":
                     break;

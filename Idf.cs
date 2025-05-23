@@ -23,10 +23,9 @@ namespace IDF_Operation.models
         public Artillery artillery;
 <<<<<<< HEAD
         Idf(string currentcommender,IStrikePuttern drones,IStrikePuttern aircraft,IStrikePuttern artillery)
-=======
-        public Idf(string currentcommender)//,StrikePuttern drones,StrikePuttern aircraft,StrikePuttern artillery
->>>>>>> origin/main
         {
+
+
             CurrentCommender = currentcommender;
             aircraft = new Aircraft();
             drones = new Drones();

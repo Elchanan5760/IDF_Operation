@@ -8,7 +8,7 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    internal class IntelligenceAnalysis
+    public class IntelligenceAnalysis
     {
         static trrorist t1 = new trrorist("t1",2, "l", "m16");
         static trrorist t2 = new trrorist("t2", 2, "l", "m16");
@@ -16,7 +16,7 @@ namespace IDF_Operation.models
         static trrorist t4 = new trrorist("t4", 5, "l", "m16");
         static trrorist t5 = new trrorist("t5", 3, "l", "m16");
 
-        Idf idf = new Idf("eyle_zamir");
+        Idf idf = new Idf("eyle zamir");
 
         Aman massage1 = new Aman(t1.Name,"car","as");
         Aman massage2 = new Aman(t2.Name,"car","as");
