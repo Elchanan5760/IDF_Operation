@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
+using IDF_Operation.models;
 
-namespace IDF_Operation.models
+namespace IDF_Operation.models;
 
+
+public class Hamas
 {
-    public class Hamas
-    {
-        private int yearEstablishment { get; set; } = 1987;
-        private string commander = "sinuar";
-        private List<object> trrorists = new List<object>();
 
-        public void SetNewCommander(string newName)
-        {
-            this.commander = newName;
-        }
-    } 
+    private int YearEstablishment { get; set; } = 1987;
+    public string Commander = "sinuar";
+    public List<trrorist> ListTrrorist = new List<trrorist>();
 }
+
+    
+
+
+
