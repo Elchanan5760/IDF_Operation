@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,3 +23,5 @@ namespace IDF_Operation.models
     }
 
 
+=======
+>>>>>>> 30090d5ac6c8928a3b953708a4b61f1046884820

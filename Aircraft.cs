@@ -7,30 +7,24 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    public class Aircraft:StrikePuttern
+    public class Aircraft : IStrikePuttern
     {
         public string UniqueName()
         {
             return "F16 Fighter Jet";
         }
 
-        public int AmmunitionCapcity()
-        {
-            return 8;
-        }
+        public int AmmunitionCapacity { get; set; }
 
-        public double LiterOfFuelSupply()
-        {
-            return 10000.0;
-        }
+        public double LiterOfFuelSupply { get; set; }
 
         public string Against()
         {
             return "Building";
         }
-        public void OpeatedBy()
+        public string OpeatedBy()
         {
-            Console.WriteLine("Operated by pilot");
+            return "Operated by pilot";
         }
     }
 }

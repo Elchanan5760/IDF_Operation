@@ -9,7 +9,7 @@ namespace IDF
     {
         static void Main(string[] args)
         {
-            Idf idf = new Idf("eyle_zamir");
+            Idf idf = new Idf("Eyle Zamir");
             Hamas hamas = new Hamas();
 
             Target(hamas);
@@ -39,6 +39,7 @@ namespace IDF
             }
 
             hamas.TerrorisPrinter(hamas.ListTrrorist);
+            
         }
     }
 }
