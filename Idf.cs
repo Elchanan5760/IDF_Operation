@@ -9,34 +9,44 @@ using IDF_Operation.models;
 
 
 namespace IDF_Operation.models
-
 {
     public class Idf
     {
-        public string CurrentCommender;
-        public Aircraft aircraft;
-        public Drones drones;
-        public Artillery artillery;
-        public Idf(string currentcommender)//,StrikePuttern drones,StrikePuttern aircraft,StrikePuttern artillery
+        string CurrentCommender;
+
+        public Idf(string currentcommender)
         {
             CurrentCommender = currentcommender;
-            aircraft = new Aircraft();
-            drones = new Drones();
-            artillery = new Artillery();
-        }
-        public void DateOfEstablishment()
-        {
-            Console.WriteLine("IDF established on 26/05/1948");
-        }
-        
-        public void Commender()
-        {
-            Console.WriteLine($"the commender of IDF is {CurrentCommender}");
         }
 
-        public void Strikes()
+        public string DateOfEstablishment()
         {
-            Console.WriteLine(aircraft.UniqueName());
+            return "IDF established on 26/05/1948";
         }
+        
+        public string Commender()
+        {
+            return $"The commender of IDF is {CurrentCommender}";
+        }
+
+        public Drones Drones()
+        {
+            
+            Drones drones = new Drones();
+            return drones;
+        }
+
+        public Artillery Artillery()
+        {
+            Artillery artillery = new Artillery();
+            return artillery;
+        }
+
+        public Aircraft Aircraft()
+        {
+            Aircraft aircraft = new Aircraft();
+            return aircraft;
+        }
+        
     }
 }
