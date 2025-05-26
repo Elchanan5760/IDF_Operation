@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 namespace IDF_Operation.models
 
 {
-    internal class hamas
+    public class Hamas
     {
-        private int YearEstablishment {get ; set; } = 1987;
-        public string Commander = "sinuar";
-        public List<object> Trrorists = new List<object>(); 
+        private int yearEstablishment { get; set; } = 1987;
+        private string commander = "sinuar";
+        private List<object> trrorists = new List<object>();
+
+        public void SetNewCommander(string newName)
+        {
+            this.commander = newName;
+        }
     } 
 }
