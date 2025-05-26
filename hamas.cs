@@ -16,10 +16,16 @@ public class Hamas
     public List<trrorist> ListTrrorist = new List<trrorist>();
 
 
-   
+    public void TerrorisPrinter(List<trrorist> terrorists)
+    {
+        foreach (trrorist t in terrorists)
+        {
+            Console.WriteLine(t.Name);
+        }
+
     }
 
-    
+    }
 
 
 
