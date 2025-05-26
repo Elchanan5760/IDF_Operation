@@ -9,22 +9,14 @@ namespace IDF_Operation.models
 {
     public class Drones:IStrikePuttern
     {
-        public int ammunitionCapcity = 3;
-        public double literOfSupply = 100;
         public string UniqueName()
         {
             return "Hermes 460 Drone";
         }
 
-        public int AmmunitionCapcity()
-        {
-            return ammunitionCapcity;
-        }
+        public int AmmunitionCapacity { get; set; }
 
-        public double LiterOfFuelSupply()
-        {
-            return literOfSupply;
-        }
+        public double LiterOfFuelSupply { set; get; }
 
         public string Against()
         {

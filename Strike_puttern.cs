@@ -9,15 +9,12 @@ namespace IDF_Operation.models
 {
     public interface IStrikePuttern
     {
-        
- 
+        public string UniqueName();
 
-        protected interface UniqueName;
+        public int AmmunitionCapacity { get; set; }
 
-        protected interface AmmunitionCapacity;
+        public double LiterOfFuelSupply { get; set; }
 
-        protected interface LiterOfFuelSupply;
-
-        protected interface Against;
+        public string Against();
     }
 }

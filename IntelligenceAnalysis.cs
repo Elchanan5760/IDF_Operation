@@ -17,27 +17,32 @@ namespace IDF_Operation.models
         static trrorist t5 = new trrorist("t5", 3, "l", "m16");
 
         Idf idf = new Idf("eyle zamir");
-
-        Aman massage1 = new Aman(t1.Name,"car","as");
-        Aman massage2 = new Aman(t2.Name,"car","as");
-        Aman massage3 = new Aman(t1.Name,"car","as");
-        Aman massage4 = new Aman(t1.Name,"car","as");
-        Aman massage5 = new Aman(t3.Name,"car","as");
-        Aman massage6 = new Aman(t4.Name,"car","as");
-        Aman massage7 = new Aman(t1.Name,"car","as");
-        Aman massage8 = new Aman(t1.Name,"car","as");
-        Aman massage9 = new Aman(t5.Name,"car","as");
-        Aman massage10 = new Aman(t2.Name,"car","as");
-
-
-        
         
 
-        
-       
-       
+        static Aman massage1 = new Aman(t1.Name,"car","as");
+        static Aman massage2 = new Aman(t2.Name,"car","as");
+        static Aman massage3 = new Aman(t1.Name,"car","as");
+        static Aman massage4 = new Aman(t1.Name,"car","as");
+        static Aman massage5 = new Aman(t3.Name,"car","as");
+        static Aman massage6 = new Aman(t4.Name,"car","as");
+        static Aman massage7 = new Aman(t1.Name,"car","as");
+        static Aman massage8 = new Aman(t1.Name,"car","as");
+        static Aman massage9 = new Aman(t5.Name,"car","as");
+        static Aman massage10 = new Aman(t2.Name,"car","as");
+        static public Aman[] locations = new Aman[] {
+            massage1,
+        massage2,
+        massage3,
+        };
 
-        
+
+
+
+
+
+
+
+
 
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IDF_Operation.idf;
 using IDF_Operation.models;
 
 namespace IDF_Operation
@@ -27,11 +26,10 @@ namespace IDF_Operation
             switch (option)
             {
                 case "1":
-                    IntelligenceAnalysis intelligence = new IntelligenceAnalysis();
-                    intelligence
+                    //Console.WriteLine(Aman.theMostInformation());
                     break;
                 case "2":
-                    Idf attackes = new;
+                    //Idf attackes = new ;
                     break;
                 case "3":
                     break;
@@ -42,6 +40,32 @@ namespace IDF_Operation
                     PrintMassage();
                     break;
             }
+        }
+        public string theMostInformation()
+        {
+
+            Dictionary<string, int> terroristNumLocations = new Dictionary<string, int>();
+            foreach (Aman location in IntelligenceAnalysis.locations)
+            {
+                if (terroristNumLocations.ContainsKey(location.Trrorist.Name))
+                {
+                    terroristNumLocations[location.Trrorist.Name] += 1;
+                }
+                else
+                {
+                    terroristNumLocations[location.Trrorist.Name] = 1;
+                }
+            }
+            int mostTimes = 0;
+            foreach (var item in terroristNumLocations)
+            {
+                if (item.Value > mostTimes)
+                {
+                    mostTimes = item.Value;
+                    Trrorist = item.Key;
+                }
+            }
+            return Trrorist.Name;
         }
     }
 }
