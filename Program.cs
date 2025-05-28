@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using IDF_Operation;
 using IDF_Operation.models;
 
 namespace IDF
@@ -9,10 +10,12 @@ namespace IDF
     {
         static void Main(string[] args)
         {
-            Idf idf = new Idf("Eyle Zamir");
-            Hamas hamas = new Hamas();
+            Menu menu = new Menu();
+            menu.ChoosOptions();
+            //Idf idf = new Idf("Eyle Zamir");
+            //Hamas hamas = new Hamas();
 
-            Target(hamas);
+            //Target(hamas);
         }
 
         static void Target(Hamas hamas)
@@ -31,14 +34,14 @@ namespace IDF
 
             for (int i = 0; i <= 5; i++)
             {
-                hamas.ListTrrorist.Add(new trrorist(
+                hamas.ListTrrorist.Add(new Terrorist(
                     names[rand.Next(names.Count)],
                     i,
                     status[rand.Next(status.Length)],
                     weapons[rand.Next(weapons.Count)]));
             }
 
-            hamas.TerrorisPrinter(hamas.ListTrrorist);
+            //hamas.TerrorisPrinter(hamas.ListTrrorist);
             
         }
     }

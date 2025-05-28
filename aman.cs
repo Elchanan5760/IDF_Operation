@@ -14,10 +14,10 @@ namespace IDF_Operation.models
 
       
 
-        private trrorist Trrorist { get; set; }
+        private Terrorist Trrorist { get; set; }
         private string LastLocatuon { get; set; }
         private string TimeInformation { get; set; }
-        public Aman(trrorist trrorist, string lastLocatuon, string tiimeInformation)
+        public Aman(Terrorist trrorist, string lastLocatuon, string tiimeInformation)
 
         {
             Trrorist = trrorist;
@@ -25,10 +25,36 @@ namespace IDF_Operation.models
             TimeInformation = tiimeInformation;
         }
         
+        //public Aman GetLocation()
+        //{
+            
+        //}
+
+        //public string theMostInformation()
+        //{
+
+        //    Dictionary<string, int> terroristNumLocations = new Dictionary<string, int>();
+        //    foreach (Aman location in .locations)
+        //    {
+        //        if (terroristNumLocations.ContainsKey(location.Trrorist.Name))
+        //        {
+        //            terroristNumLocations[location.Trrorist.Name] += 1;
+        //        }
+        //        else
+        //        {
+        //            terroristNumLocations[location.Trrorist.Name] = 1;
+        //        }
+        //    }
+        //    int mostTimes = 0;
+        //    foreach (var item in terroristNumLocations)
+        //    {
+        //        if (item.Value > mostTimes)
+        //        {
+        //            mostTimes = item.Value;
+        //            Trrorist = item.Key;
+        //        }
+        //    }
+        //    return Trrorist.Name;
+        //}
     }
 }
-
- 
-
-
-   
