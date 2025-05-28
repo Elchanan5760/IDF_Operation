@@ -9,21 +9,37 @@ using IDF_Operation.models;
 namespace IDF_Operation.models
 {
     
-    public class Aman
+     public class Aman
     {
 
-      
 
-        private trrorist Trrorist { get; set; }
-        private string LastLocatuon { get; set; }
-        private string TimeInformation { get; set; }
-        public Aman(trrorist trrorist, string lastLocatuon, string tiimeInformation)
-
+        static public Dictionary<string, List<string>> TheMostInformation(Dictionary<string, List<string>> dict)
         {
-            Trrorist = trrorist;
-            LastLocatuon = lastLocatuon;
-            TimeInformation = tiimeInformation;
+            int big = 0;
+            Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
+            foreach (var item in dict)
+            {
+                if (dict.Values.Count > big)
+                {
+                    big = dict.Values.Count;
+                    name[item.Key] = item.Value;
+                }
+               
+
+
+            }
+            foreach (var item in name)
+            { 
+            Console.WriteLine(item.Value.Count +"jjjj");
+            }
+            foreach (var item in dict)
+            {
+                Console.WriteLine(item.Value.Count);
+            }
+            return name;
         }
+       
+     
         
     }
 }

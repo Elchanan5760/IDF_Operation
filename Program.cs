@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Security.Cryptography.X509Certificates;
+using IDF_Operation;
 using IDF_Operation.models;
 
 namespace IDF
@@ -12,9 +13,10 @@ namespace IDF
         {
             Idf idf = new Idf("eyle_zamir");
             Hamas hamas = new Hamas();
-            DaIntelligence analysis = new DaIntelligence();
-            analysis.Target(hamas);
-            analysis.MessageTerrorist(hamas.ListTrrorist);
+            //DaIntelligence analysis = new DaIntelligence();
+            Swhos.Target(hamas);
+            //analysis.MessageTerrorist(hamas.ListTrrorist);
+            Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
         }
 
       
