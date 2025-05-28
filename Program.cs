@@ -11,6 +11,7 @@ namespace IDF
     {
         static void Main(string[] args)
         {
+
             Idf idf = new Idf("eyle_zamir");
             Hamas hamas = new Hamas();
             //DaIntelligence analysis = new DaIntelligence();
@@ -20,5 +21,6 @@ namespace IDF
         }
 
       
+
     }
 }
