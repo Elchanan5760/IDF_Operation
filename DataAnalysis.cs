@@ -11,7 +11,7 @@ namespace IDF_Operation.models
     public class DaIntelligence
     {
      
-        static public Dictionary<string,List<string>> MessageTerrorist(List<trrorist>list)
+        static public Dictionary<string,List<string>> MessageTerrorist(List<Terrorist> list)
         {
             Random rand = new Random();
             List<string> status = new List<string>()
@@ -19,7 +19,7 @@ namespace IDF_Operation.models
             Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
             for (int i = 0; i != 20; i++)
             {
-                trrorist t = list[rand.Next(list.Count)];
+                Terrorist t = list[rand.Next(list.Count)];
                 {
                     DateTime now = DateTime.Now;
                     if (dict.ContainsKey(t.Name))

@@ -27,7 +27,8 @@ namespace IDF_Operation
             switch (_option)
             {
                 case "1":
-                    
+                    Aman aman = new Aman();
+                    aman.TheMostInformation();
                     break;
                 case "2":
                     Idf idf = new Idf();
