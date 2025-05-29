@@ -12,12 +12,12 @@ namespace IDF_Operation.models
 {
     public class Idf
     {
-        string CurrentCommender;
+        private string _currentCommender { set; get; }
 
-        public Idf(string currentcommender)
-        {
-            CurrentCommender = currentcommender;
-        }
+        //public Idf(string currentcommender)
+        //{
+        //    _currentCommender = currentcommender;
+        //}
 
         public string DateOfEstablishment()
         {
@@ -26,25 +26,28 @@ namespace IDF_Operation.models
         
         public string Commender()
         {
-            return $"The commender of IDF is {CurrentCommender}";
+            return $"The commender of IDF is {_currentCommender}";
         }
 
         public Drones Drones()
         {
             
             Drones drones = new Drones();
+            drones.InitializeAmmunitionCapacity();
             return drones;
         }
 
         public Artillery Artillery()
         {
             Artillery artillery = new Artillery();
+            artillery.InitializeAmmunitionCapacity();
             return artillery;
         }
 
         public Aircraft Aircraft()
         {
             Aircraft aircraft = new Aircraft();
+            aircraft.InitializeAmmunitionCapacity();
             return aircraft;
         }
         

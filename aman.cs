@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -8,40 +8,35 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    
-     public class Aman
+
+    public class Aman
     {
 
-
-        static public Dictionary<string, List<string>> TheMostInformation(Dictionary<string, List<string>> dict)
+        static public string TheMostInformation(Dictionary<string, List<string>> dict)
         {
             int big = 0;
-            Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
+            string name = "";
+            //Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
             foreach (var item in dict)
             {
                 if (item.Value.Count > big)
                 {
                     big = item.Value.Count;
-                    name[item.Key] = item.Value;
+                    name = item.Key;
                 }
-               
+
 
 
             }
-            Console.WriteLine(big);
-            foreach (var item in dict)
-            {
-                Console.WriteLine(item.Value.Count);
-            }
+
+            //Console.WriteLine(name);
+
+            //Console.WriteLine(big);
             return name;
 
         }
-
-        
     }
+
+
+
 }
-
- 
-
-
-   

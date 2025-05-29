@@ -5,20 +5,26 @@ using System.Security.Cryptography.X509Certificates;
 using IDF_Operation;
 using IDF_Operation.models;
 
-namespace IDF
+namespace IDF_Operation
 {
     public class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
-            Idf idf = new Idf("eyle_zamir");
-            Hamas hamas = new Hamas();
+
+            //    Idf idf = new Idf();
+            //Hamas hamas = new Hamas();
             //DaIntelligence analysis = new DaIntelligence();
-            Swhos.Target(hamas);
-            //analysis.MessageTerrorist(hamas.ListTrrorist);
-            Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
+            //Swhos.FactoryTerrorist(hamas);
+
+
+            //Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
+
+            Menu x = new Menu();
+            x.ChoosOptions();
         }
 
       
+
     }
 }

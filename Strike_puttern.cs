@@ -11,10 +11,14 @@ namespace IDF_Operation.models
     {
         public string UniqueName();
 
-        public int AmmunitionCapacity { get; set; }
+        public int GetAmmunitionCapacity();
 
-        public double LiterOfFuelSupply { get; set; }
+        public double GetLiterOfFuelSupply();
 
         public string Against();
+
+        public void InitializeAmmunitionCapacity();
+
+        public void InitializeLiterOfFuelSupply();
     }
 }

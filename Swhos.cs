@@ -9,7 +9,7 @@ namespace IDF_Operation.models
 {
     public class Swhos
     {
-         static public void Target(Hamas hamas)
+         static public void FactoryTerrorist(Hamas hamas)
         {
             List<string> names = new List<string>()
             {
@@ -23,9 +23,9 @@ namespace IDF_Operation.models
         string[] status = new string[] { "dead", "alive" };
         Random rand = new Random();
 
-            for (int i = 0; i< 10; i++)
+            for (int i = 0; i != 10; i++)
             {
-                hamas.ListTrrorist.Add(new trrorist(
+                hamas.ListTrrorist.Add(new Terrorist(
                     names[rand.Next(names.Count)],
                     i,
                     status[rand.Next(status.Length)],
@@ -39,5 +39,7 @@ namespace IDF_Operation.models
 
 
         }
+        public Hamas hamas = new Hamas();
+
     }
 }
