@@ -18,6 +18,8 @@ namespace IDF
             Swhos.Target(hamas);
             //analysis.MessageTerrorist(hamas.ListTrrorist);
             Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
+            Menu x = new Menu();
+            x.ChoosOptions();
         }
 
       

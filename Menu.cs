@@ -11,43 +11,51 @@ namespace IDF_Operation
     public class Menu
     {
         private string _option;
-        void PrintMassage()
+        private void GetOption()
         {
             Console.WriteLine("What information do you want:\n" +
                 "For intelligence analysis press 1\n" +
                 "For attack availability press 2\n" +
                 "For target priority press 3\n" +
-                "For carrying out an attack press 4");
+                "For carrying out an attack press 4\n" +
+                "For exit press 5");
             _option = Console.ReadLine();
         }
         public void ChoosOptions()
         {
-            PrintMassage();
-            
-            switch (_option)
+            bool cond = true;
+            do
             {
-                case "1":
-                    Aman aman = new Aman();
-                    DaIntelligence data = new DaIntelligence();
-                    //aman.TheMostInformation(data.MessageTerrorist());
-                    break;
-                case "2":
-                    Idf idf = new Idf();
-                    Console.WriteLine($"{idf.Aircraft().UniqueName()}: {idf.Aircraft().GetAmmunitionCapacity()}");
-                    Console.WriteLine($"{idf.Artillery().UniqueName()}: {idf.Artillery().GetAmmunitionCapacity()}");
-                    Console.WriteLine($"{idf.Drones().UniqueName()}: {idf.Drones().GetAmmunitionCapacity()}");
-                    break;
-                case "3":
+                GetOption();
 
-                    break;
-                case "4":
+                switch (_option)
+                {
+                    case "1":
+                        Aman aman = new Aman();
+                        DaIntelligence data = new DaIntelligence();
+                        //aman.TheMostInformation(data.MessageTerrorist());
+                        break;
+                    case "2":
+                        Idf idf = new Idf();
+                        Console.WriteLine($"{idf.Aircraft().UniqueName()}: {idf.Aircraft().GetAmmunitionCapacity()}");
+                        Console.WriteLine($"{idf.Artillery().UniqueName()}: {idf.Artillery().GetAmmunitionCapacity()}");
+                        Console.WriteLine($"{idf.Drones().UniqueName()}: {idf.Drones().GetAmmunitionCapacity()}");
+                        break;
+                    case "3":
 
-                    break;
-                default:
-                    Console.WriteLine("Your option doesn't exist please try again");
-                    PrintMassage();
-                    break;
+                        break;
+                    case "4":
+
+                        break;
+                    case "5":
+                        cond = false;
+                        break;
+                    default:
+                        Console.WriteLine("Your option doesn't exist please try again");
+                        break;
+                }
             }
+            while (cond);
         }
         
     }
