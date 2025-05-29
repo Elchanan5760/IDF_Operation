@@ -28,7 +28,8 @@ namespace IDF_Operation
             {
                 case "1":
                     Aman aman = new Aman();
-                    aman.TheMostInformation();
+                    DaIntelligence data = new DaIntelligence();
+                    //aman.TheMostInformation(data.MessageTerrorist());
                     break;
                 case "2":
                     Idf idf = new Idf();

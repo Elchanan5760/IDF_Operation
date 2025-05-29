@@ -15,13 +15,13 @@ public class Hamas
     private int YearEstablishment { get; set; } = 1987;
 
     string Commander = "sinuar";
-    public List<trrorist> ListTrrorist = new List<trrorist>();
+    public List<Terrorist> ListTrrorist = new List<Terrorist>();
 
 
 
-    public void TerrorisPrinter(List<trrorist> terrorists)
+    public void TerrorisPrinter(List<Terrorist> terrorists)
     {
-        foreach (trrorist t in terrorists)
+        foreach (Terrorist t in terrorists)
         {
             Console.WriteLine(t.Name);
         }

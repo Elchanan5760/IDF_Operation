@@ -12,7 +12,7 @@ namespace IDF
         static void Main(string[] args)
         {
 
-            Idf idf = new Idf("eyle_zamir");
+            Idf idf = new Idf();
             Hamas hamas = new Hamas();
             //DaIntelligence analysis = new DaIntelligence();
             Swhos.Target(hamas);
