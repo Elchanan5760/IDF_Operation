@@ -15,7 +15,7 @@ public  class Hamas
     private int YearEstablishment { get; set; } = 1987;
 
     string Commander = "sinuar";
-    public  List<Terrorist> ListTrrorist = new List<Terrorist>();
+    public static List<Terrorist> ListTrrorist = new List<Terrorist>();
 
 
 

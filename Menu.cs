@@ -38,7 +38,7 @@ namespace IDF_Operation.models
                     Hamas hamas = new Hamas();
                     Swhos.FactoryTerrorist(hamas);
 
-                   Console.WriteLine(Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist)));
+                   Console.WriteLine(Aman.TheMostInformation(DaIntelligence.MessageTerrorist(Hamas.ListTrrorist)));
                     break;
 
                 case "2":
@@ -48,6 +48,7 @@ namespace IDF_Operation.models
                     Console.WriteLine($"{idf.Drones().UniqueName()}: {idf.Drones().GetAmmunitionCapacity()}");
                     break;
                 case "3":
+                    Console.WriteLine(Aman.RiskTerrorist(DaIntelligence.MessageTerrorist(Hamas.ListTrrorist)));
 
                     break;
                 case "4":
