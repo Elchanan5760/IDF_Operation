@@ -19,27 +19,24 @@ namespace IDF_Operation.models
             Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
             foreach (var item in dict)
             {
-                if (dict.Values.Count > big)
+                if (item.Value.Count > big)
                 {
-                    big = dict.Values.Count;
+                    big = item.Value.Count;
                     name[item.Key] = item.Value;
                 }
                
 
 
             }
-            foreach (var item in name)
-            { 
-            Console.WriteLine(item.Value.Count +"jjjj");
-            }
+            Console.WriteLine(big);
             foreach (var item in dict)
             {
                 Console.WriteLine(item.Value.Count);
             }
             return name;
+
         }
-       
-     
+
         
     }
 }
