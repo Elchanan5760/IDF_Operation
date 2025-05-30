@@ -12,4 +12,8 @@ public class Knife : IWeapon
     {
         return 1;
     }
+    public string GetWeaponName()
+    {
+        return "Knife";
+    }
 }

@@ -12,4 +12,8 @@ public class M16:IWeapon
     {
         return 3;
     }
+    public string GetWeaponName()
+    {
+        return "M16";
+    }
 }

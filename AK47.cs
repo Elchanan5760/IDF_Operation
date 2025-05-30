@@ -12,4 +12,8 @@ public class AK47:IWeapon
     {
         return 3;
     }
+    public string GetWeaponName()
+    {
+        return "AK47";
+    }
 }

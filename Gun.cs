@@ -12,4 +12,8 @@ public class Gun:IWeapon
     {
         return 2;
     }
+    public string GetWeaponName()
+    {
+        return "Gun";
+    }
 }

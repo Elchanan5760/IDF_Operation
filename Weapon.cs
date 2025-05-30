@@ -9,5 +9,6 @@ namespace IDF_Operation
     public interface IWeapon
     {
         public int GetWeaponRank();
+        public string GetWeaponName();
     }
 }
