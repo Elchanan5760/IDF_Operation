@@ -12,8 +12,7 @@ namespace IDF_Operation
        static void Main(string[] args)
         {
 
-            //    Idf idf = new Idf();
-            //Hamas hamas = new Hamas();
+
             //DaIntelligence analysis = new DaIntelligence();
             //Swhos.FactoryTerrorist(hamas);
 

@@ -34,11 +34,13 @@ namespace IDF_Operation.models
             {
                 case "1":
                     Aman aman = new Aman();
+
                     Swhos swhos = new Swhos();
                     Hamas hamas = new Hamas();
                     Swhos.FactoryTerrorist(hamas);
 
                    Console.WriteLine(Aman.TheMostInformation(DaIntelligence.MessageTerrorist(Hamas.ListTrrorist)));
+
                     break;
 
                 case "2":
