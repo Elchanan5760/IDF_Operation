@@ -28,10 +28,15 @@ namespace IDF_Operation
             {
                 GetOption();
 
+                Aman aman = new Aman();
+                Hamas hamas = new Hamas();
+                ObjectsTerrorist objectsTerrorist = new ObjectsTerrorist();
+                
+                
                 switch (_option)
                 {
                     case "1":
-                        Aman aman = new Aman();
+                        
                         DaIntelligence data = new DaIntelligence();
                         //aman.TheMostInformation(data.MessageTerrorist());
                         break;
@@ -42,7 +47,8 @@ namespace IDF_Operation
                         Console.WriteLine($"{idf.Drones().UniqueName()}: {idf.Drones().GetAmmunitionCapacity()}");
                         break;
                     case "3":
-
+                        
+                        aman.TheMostDangerous(hamas);
                         break;
                     case "4":
 

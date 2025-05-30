@@ -29,7 +29,7 @@ namespace IDF_Operation.models
             }
             foreach (var item in name)
             { 
-            Console.WriteLine(item.Value.Count +"jjjj");
+            Console.WriteLine(item.Value.Count + "hes the most information");
             }
             foreach (var item in dict)
             {
@@ -37,12 +37,26 @@ namespace IDF_Operation.models
             }
             return name;
         }
-       
-     
-        
+        public Terrorist TheMostDangerous(Hamas hamas)
+        {
+            int calculateMostDangerous = 0;
+            Terrorist mostTerrorist = hamas.ListTrrorist[0];
+            foreach (Terrorist terrorist in hamas.ListTrrorist)
+            {
+                if ( terrorist.GetRank() * terrorist.GetWeapon().GetWeaponRank() > calculateMostDangerous)
+                {
+                    calculateMostDangerous = terrorist.GetRank() * terrorist.GetWeapon().GetWeaponRank();
+                    mostTerrorist = terrorist;
+                }
+            }
+            return mostTerrorist;
+        }
+
+
+
         //public Aman GetLocation()
         //{
-            
+
         //}
 
         //public string theMostInformation()

@@ -7,7 +7,7 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    public class Swhos
+    public class ObjectsTerrorist
     {
         static public void Target(Hamas hamas)
         {
@@ -19,7 +19,11 @@ namespace IDF_Operation.models
                 "Karim", "Adel", "Tamer", "Wael"
             };
 
-            List<string> weapons = new List<string>() { "m16", "knife", "gun" };
+            M16 m16 = new M16();
+            AK47 aK47 = new AK47();
+            Gun gun = new Gun();
+            Knife knife = new Knife();
+            List<IWeapon> weapons = new List<IWeapon>() { m16, knife, aK47,gun};
             string[] status = new string[] { "dead", "alive" };
             Random rand = new Random();
 

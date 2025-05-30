@@ -8,20 +8,30 @@ namespace IDF_Operation.models
 {
     public class Terrorist
     {
-        public string Name;
-        public int Rank;
-        public string Status;
-        public string Arms;
+        private string _name;
+        private int _rank;
+        private string _status;
+        private IWeapon _arms;
 
-        public Terrorist(string name, int rank, string status, string arms)
+        public Terrorist(string name, int rank, string status, IWeapon arms)
         {
-            Name = name;
-            Rank = rank;
-            Status = status;
-            Arms = arms;
+            _name = name;
+            _rank = rank;
+            _status = status;
+            _arms = arms;
         }
-     
-
+        public string GetName()
+        {
+            return _name;
+        }
+        public int GetRank()
+        {
+            return _rank;
+        }
+        public IWeapon GetWeapon()
+        {
+            return _arms;
+        }
     }
 
 }

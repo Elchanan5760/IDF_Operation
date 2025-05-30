@@ -12,14 +12,16 @@ namespace IDF
         static void Main(string[] args)
         {
 
-            Idf idf = new Idf();
-            Hamas hamas = new Hamas();
+            //Idf idf = new Idf();
+            //Hamas hamas = new Hamas();
             //DaIntelligence analysis = new DaIntelligence();
-            Swhos.Target(hamas);
+            //Swhos.Target(hamas);
             //analysis.MessageTerrorist(hamas.ListTrrorist);
-            Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
+            //Aman.TheMostInformation(DaIntelligence.MessageTerrorist(hamas.ListTrrorist));
             Menu x = new Menu();
             x.ChoosOptions();
+            //Knife k = new Knife();
+            //Console.WriteLine(k.GetWeaponRank());
         }
 
       

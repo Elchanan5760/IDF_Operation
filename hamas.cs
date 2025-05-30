@@ -23,7 +23,7 @@ public class Hamas
     {
         foreach (Terrorist t in terrorists)
         {
-            Console.WriteLine(t.Name);
+            Console.WriteLine(t.GetName());
         }
 
     }

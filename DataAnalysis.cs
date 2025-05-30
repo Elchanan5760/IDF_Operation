@@ -22,12 +22,12 @@ namespace IDF_Operation.models
                 Terrorist t = list[rand.Next(list.Count)];
                 {
                     DateTime now = DateTime.Now;
-                    if (dict.ContainsKey(t.Name))
+                    if (dict.ContainsKey(t.GetName()))
                     {
-                        dict[t.Name].AddRange(new List<string>() { status[rand.Next(status.Count)], $"{now}" });
+                        dict[t.GetName()].AddRange(new List<string>() { status[rand.Next(status.Count)], $"{now}" });
                     }
                     else
-                        dict[t.Name] = new List<string>() { status[rand.Next(status.Count)], $"{now}" };
+                        dict[t.GetName()] = new List<string>() { status[rand.Next(status.Count)], $"{now}" };
 
                 }
 
