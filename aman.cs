@@ -8,68 +8,82 @@ using IDF_Operation.models;
 
 namespace IDF_Operation.models
 {
-    
-     public class Aman
+
+    public class Aman
     {
 
-        static public Dictionary<string, List<string>> TheMostInformation(Dictionary<string, List<string>> dict)
+        static public string TheMostInformation(Dictionary<Terrorist, List<string>> dict)
         {
             int big = 0;
-            Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
+            string name = "";
+            //Dictionary<string, List<string>> name = new Dictionary<string, List<string>>();
             foreach (var item in dict)
             {
-                if (dict.Values.Count > big)
+                if (item.Value.Count > big)
                 {
-                    big = dict.Values.Count;
-                    name[item.Key] = item.Value;
+                    big = item.Value.Count;
+                    name = item.Key.Name;
                 }
-               
 
 
+
             }
-            foreach (var item in name)
-            { 
-            Console.WriteLine(item.Value.Count +"jjjj");
-            }
-            foreach (var item in dict)
-            {
-                Console.WriteLine(item.Value.Count);
-            }
+
+            //Console.WriteLine(name);
+
+            //Console.WriteLine(big);
             return name;
+
         }
-       
-     
-        
-        //public Aman GetLocation()
-        //{
-            
-        //}
+        public static String RiskTerrorist(Dictionary<Terrorist, List<string>> dict1)
+        {
+            string terroristName = null;
+            int risk = 0;
+            foreach (var item in dict1)
+            {
+                int temp = RankAcount(item.Key);
+                if (temp > risk)
+                {
+                    risk = temp;
+                    terroristName = item.Key.Name;
 
-        //public string theMostInformation()
-        //{
 
-        //    Dictionary<string, int> terroristNumLocations = new Dictionary<string, int>();
-        //    foreach (Aman location in .locations)
-        //    {
-        //        if (terroristNumLocations.ContainsKey(location.Trrorist.Name))
-        //        {
-        //            terroristNumLocations[location.Trrorist.Name] += 1;
-        //        }
-        //        else
-        //        {
-        //            terroristNumLocations[location.Trrorist.Name] = 1;
-        //        }
-        //    }
-        //    int mostTimes = 0;
-        //    foreach (var item in terroristNumLocations)
-        //    {
-        //        if (item.Value > mostTimes)
-        //        {
-        //            mostTimes = item.Value;
-        //            Trrorist = item.Key;
-        //        }
-        //    }
-        //    return Trrorist.Name;
-        //}
+                }
+                
+            }
+            return terroristName;
+
+
+
+        }
+
+
+
+
+        public static int RankAcount(Terrorist terr)
+        {
+            int riskWoepon = 0;
+
+            //foreach (var item in dict2)
+
+            {
+                if (terr.Arms == "knife")
+                {
+                    riskWoepon = 1;
+                }
+                else if (terr.Arms == "gun")
+                {
+                    riskWoepon = 2;
+                }
+                else if (terr.Arms == "m16" || terr.Arms == "ak 47")
+                {
+                    riskWoepon = 3;
+                }
+            }
+            return riskWoepon;
+
+            //"m16", "knife", "gun","ak 47"
+
+        }
     }
 }
